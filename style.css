@@ -1,4 +1,4 @@
-/* --- CSS Variables & Theme --- */
+
 :root {
   --bg-main: #fafafa;
   --bg-secondary: #ffffff;
@@ -19,7 +19,7 @@
   --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* --- Base Reset & Typography --- */
+
 * {
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px; /* Adjusts for fixed nav */
+  scroll-padding-top: 80px; 
 }
 
 body {
@@ -37,12 +37,11 @@ body {
   color: var(--text-main);
   line-height: 1.6;
   overflow-x: hidden;
-  /* Subtle dot pattern background */
   background-image: radial-gradient(var(--border-color) 1px, transparent 1px);
   background-size: 24px 24px;
 }
 
-/* --- Navigation --- */
+
 .navbar {
   position: fixed;
   top: 0;
@@ -99,7 +98,7 @@ body {
   color: var(--accent-primary);
 }
 
-/* --- Hero Section --- */
+
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -160,7 +159,7 @@ body {
   max-width: 90%;
 }
 
-/* Buttons */
+
 .button-group {
   display: flex;
   gap: 16px;
@@ -203,7 +202,7 @@ body {
   background-color: var(--bg-secondary);
 }
 
-/* Hero Visual */
+
 .hero-visual {
   flex: 1;
   display: flex;
@@ -239,11 +238,10 @@ body {
   z-index: 2;
   border: 4px solid white;
   box-shadow: 0 24px 48px rgba(0,0,0,0.08);
-  /* Fallback color if image is missing */
   background-color: var(--border-color);
 }
 
-/* --- Projects & Stack Section --- */
+
 .skills-section {
   background-color: var(--bg-secondary);
   padding: 120px 5%;
@@ -332,7 +330,7 @@ body {
   border-color: var(--accent-primary);
 }
 
-/* --- Education Section --- */
+
 .education-section {
   padding: 120px 5%;
   max-width: 1400px;
@@ -408,7 +406,7 @@ body {
   line-height: 1.6;
 }
 
-/* --- Animations --- */
+
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -446,7 +444,7 @@ body {
   animation-delay: 0.4s;
 }
 
-/* Scroll Animation Triggers */
+
 .animate-on-scroll {
   opacity: 0;
   transform: translateY(30px);
@@ -458,7 +456,7 @@ body {
   transform: translateY(0);
 }
 
-/* --- Responsive Styles --- */
+
 @media (max-width: 1024px) {
   .hero-section {
     flex-direction: column;
@@ -513,7 +511,7 @@ body {
 }
 
 
-/* --- Skills Section --- */
+
 .vk-skills-wrapper {
   background-color: var(--bg-secondary);
   padding: 100px 5%;
@@ -562,7 +560,6 @@ body {
 }
 
 
-/* --- Timeline / Experience Section --- */
 .vk-experience-wrapper {
   padding: 100px 5%;
   max-width: 1400px;
@@ -646,7 +643,7 @@ body {
   margin-bottom: 8px;
 }
 
-/* Responsive adjustment for Experience Grid */
+
 @media (max-width: 768px) {
   .vk-experience-item {
     grid-template-columns: 1fr;
@@ -656,8 +653,7 @@ body {
 }
 
 
-/* --- Footer Section --- */
-/* --- Contact Section --- */
+
 .vk-contact-section {
   padding: 100px 5% 60px;
   max-width: 1400px;
@@ -713,7 +709,7 @@ body {
   text-decoration: underline;
 }
 
-/* --- Contact Card (Right Side) --- */
+
 .vk-contact-card {
   background-color: var(--bg-main);
   border: 1px solid var(--border-color);
@@ -790,7 +786,7 @@ body {
   box-shadow: 0 8px 24px var(--accent-glow);
 }
 
-/* --- Bottom Footer --- */
+
 .vk-bottom-footer {
   background-color: var(--bg-secondary);
   width: 100%;
@@ -844,7 +840,7 @@ body {
   color: var(--text-main);
 }
 
-/* --- Responsive Adjustments --- */
+
 @media (max-width: 900px) {
   .vk-contact-grid {
     grid-template-columns: 1fr;
@@ -861,7 +857,6 @@ body {
   }
 }
 
-/* Responsive adjustments for Footer */
 @media (max-width: 768px) {
   .vk-footer-inner {
     flex-direction: column;
